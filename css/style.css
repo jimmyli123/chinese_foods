@@ -4,12 +4,18 @@ body {
     background-color: black;
     margin: 0rem;
     overflow: hidden;
+    color: white;
 }
 
 
+nav {
+    background-color: rgba(28,28,28,255);;
+}
+
 header {
-    background-color: rgb(60, 255, 0);
+    background-color: rgba(14,14,14,255);
     /* height: 100vh; */
+    
 }
 
 img {
@@ -18,6 +24,13 @@ img {
 }
 
 #introduction {
+    scroll-snap-type: x mandatory;
+    scroll-padding: 0 24;;
+}
+.intro_item {
     display: flex;
     align-items: center;
+}
+#introduction .intro_item {
+    scroll-snap-align: start;
 }
